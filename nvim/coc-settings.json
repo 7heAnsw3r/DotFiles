@@ -1,0 +1,20 @@
+{
+  "python.autoComplete.addBrackets": true,
+  "coc.preferences.autoCompleteDelay": 100,
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.triggerCharacterPriority": 100,
+  "coc.preferences.snippetSupport": true,
+  "tabnine.experimentalAutoImports": true,
+  "tabnine.maxNumResults": 10,
+  "python.linting.enabled": false,
+  "python.formatting.provider": "autopep8",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "bash",
+    "cpp",
+    "c"
+  ],
+  "coc.source.tabnine.enable": true,
+  "snippets.ultisnips.pythonPrompt": false
+}

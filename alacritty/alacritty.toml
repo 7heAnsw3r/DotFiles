@@ -1,0 +1,62 @@
+# Configuración básica para Alacritty
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+
+
+[colors.primary]
+background = '#000000' # Fondo completamente negro
+foreground = '#FFFFFF' # Texto en blanco brillante
+
+[colors.cursor]
+text = '#000000'       # Texto debajo del cursor (negro puro)
+cursor = '#FFFFFF'     # Color del cursor (blanco puro)
+
+[colors.normal]
+black = '#000000'      # Negro puro
+red = '#FF3333'        # Rojo fuerte y vibrante
+green = '#33FF33'      # Verde brillante
+yellow = '#FFFF33'     # Amarillo intenso
+blue = '#3399FF'       # Azul brillante (para directorios y resaltar como masculino)
+magenta = '#9933FF'    # Magenta oscuro (más serio)
+cyan = '#33FFFF'       # Cian vibrante
+white = '#FFFFFF'      # Blanco puro
+
+[colors.bright]
+black = '#555555'      # Negro brillante (gris oscuro)
+red = '#FF4444'        # Rojo aún más vibrante
+green = '#44FF44'      # Verde más fuerte
+yellow = '#FFFF44'     # Amarillo vibrante
+blue = '#4477FF'       # Azul neón (masculino para directorios)
+magenta = '#7744BB'    # Magenta oscuro más apagado
+cyan = '#44FFFF'       # Cian brillante
+white = '#FFFFFF'      # Blanco puro
+
+
+[window]
+startup_mode = "Windowed"       # Puede ser Windowed o Maximized
+title = "Hacker Terminal"       # Cambia el título de la ventana
+dynamic_title = false           # Evita que el título cambie automáticamente
+decorations = "Full"            # Quita decoraciones (minimalista)
+opacity = 0.95                  # Transparencia ligera
+padding = { x = 5, y = 5 }      # Margen interno para el texto
+
+[cursor]
+style = "Underline"  # Opciones: Block, Beam, Underline
+unfocused_hollow = true 
+
+[scrolling]
+# Habilitar buffer para scrollback
+history = 10000
+multiplier = 3
+
+[terminal.shell]
+program = "/usr/bin/tmux"
+args = ["new-session"]
+
+[mouse]
+hide_when_typing = true
+
+[terminal]
